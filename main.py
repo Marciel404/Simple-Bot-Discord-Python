@@ -20,7 +20,7 @@ async def on_message(msg):
 
     await client.process_commands(msg) #Process commands after this event
 
-@client.command() #Sintax 
+@client.command() #Syntax of a command
 async def ping(ctx):
     await ctx.send('Pong!!') #Bot send message in channel
 
