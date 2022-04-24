@@ -28,7 +28,7 @@ async def ping(ctx):
     e = discord.Embed( #Create embed
     title ='Ping', #Set title for embed
     description = 'My ping is {}'.format(int(ping)), #Set body for embed
-    color = 15552 #Set color in embed
+    color = 15552 #Set color for embed
     )
 
     await ctx.send(embed = e) #Send embed in channel
