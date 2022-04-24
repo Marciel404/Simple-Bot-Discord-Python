@@ -14,9 +14,9 @@ async def on_ready():
 
 @client.event
 async def on_message(msg):
-    if msg.author == client.user: return #For bot not response self
+    if msg.author == client.user: return #For bot not respond self
 
-    if msg.author.bot: return #For bot not response outher bot's
+    if msg.author.bot: return #For bot not to respond to other bots
 
     await client.process_commands(msg)
 
