@@ -18,7 +18,7 @@ async def on_message(msg):
 
     if msg.author.bot: return #For bot not to respond to other bots
 
-    await client.process_commands(msg)
+    await client.process_commands(msg) #Process commands after this event
 
 @client.command() #Sintax 
 async def ping(ctx):
