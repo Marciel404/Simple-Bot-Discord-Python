@@ -22,6 +22,15 @@ async def on_message(msg):
 
 @client.command() #Syntax of a command
 async def ping(ctx):
-    await ctx.send('Pong!!') #Bot send message in channel
+
+    ping = client.latency * 1000 #Get bot latency
+
+    e = discord.Embed( #Create embed
+    title ='Ping', #Set title for embed
+    description = 'My ping is {}'.format(int(ping)), #Set body for embed
+    color = 15552 #Set color in embed
+    )
+
+    await ctx.send(embed = e) #Send embed in channel
 
 client.run('Token Here') #Your token bot here
