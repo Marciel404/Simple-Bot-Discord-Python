@@ -3,10 +3,12 @@ from discord.ext import commands
 
 intents = discord.Intents.all()
 
-client = commands.Bot(command_prefix = '!', 
-help_command = None, 
-case_insensitive = True,
-intents = intents)
+client = commands.Bot( #Declarate bot
+command_prefix = '!', #Prefix Bot
+help_command = None, #remove default command help
+case_insensitive = True, #Response the command 
+intents = intents #Intents discord
+)
 
 @client.event
 async def on_ready():
@@ -20,7 +22,7 @@ async def on_message(msg):
 
     await client.process_commands(msg) #Process commands after this event
 
-@client.command() #Syntax of a command
+@client.command() #Sintax command
 async def ping(ctx):
 
     ping = client.latency * 1000 #Get bot latency
@@ -33,4 +35,4 @@ async def ping(ctx):
 
     await ctx.send(embed = e) #Send embed in channel
 
-client.run('Token Here') #Your token bot here
+client.run('OTY3NDU2NTUwNDA0ODk0Nzgw.YmQkIA.R9DuGYyAkhuvpx0omyB_ufN8HrI')
