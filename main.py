@@ -35,4 +35,4 @@ async def ping(ctx):
 
     await ctx.send(embed = e) #Send embed in channel
 
-client.run('OTY3NDU2NTUwNDA0ODk0Nzgw.YmQkIA.R9DuGYyAkhuvpx0omyB_ufN8HrI')
+client.run('Token bot here')
